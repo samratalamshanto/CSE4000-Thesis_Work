@@ -1,0 +1,1782 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("RSFF")
+        ("AND3")
+        ("INV")
+        ("OR4")
+        ("OR2")
+        ("AND2")
+        ("XOR")
+        ("CD4027A")
+        ("VDC")
+        ("DigClock")
+        ("r"
+            ("info"
+                ("spice_dsg"	"R")
+                ("port_order"
+                    ("1")
+                    ("2")
+                )
+            )
+            ("model_params"
+                ("level_0"
+                    ("TC1"
+                        ("value"	"0")
+                    )
+                    ("TC2"
+                        ("value"	"0")
+                    )
+                    ("VALUE"
+                        ("value"	"0")
+                    )
+                )
+            )
+            ("smoke"
+                ("pre_smoke"
+                    ("NODE_VA"	"1")
+                    ("NODE_VB"	"2")
+                    ("DERATE_TYPE"	"RES")
+                )
+                ("max_ops"
+                    ("RV"	"VOLTAGE")
+                    ("PDM"	"POWER")
+                    ("SLP"	"SLOPE")
+                    ("RBA"	"1/SLP")
+                    ("TMAX"	"MAX_TEMP")
+                    ("TB"	"TMAX")
+                    ("RTKNEE"	"TKNEE")
+                    ("RTRISE"	"TRISE")
+                )
+                ("smoke_tests"
+                    ("PDM"
+                        ("test"	"power_test")
+                    )
+                    ("RV"
+                        ("test"	"abs_voltage_test")
+                        ("nodes"
+                            ("NODE_VA")
+                            ("NODE_VB")
+                        )
+                    )
+                    ("TB"
+                        ("test"	"temp_null_test")
+                    )
+                )
+                ("device_max_ops")
+            )
+        )
+    )
+    ("instances"
+        ("U1"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U1")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U4"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U4")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U5"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U5")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U6"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U6")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U7"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U7")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U8"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U8")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U10"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U10")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U9"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U9")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U12"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U12")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U11"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U11")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U13"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U13")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U14"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U14")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U16"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U16")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U20"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U20")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U26"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U26")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U18"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U18")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U21"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U21")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U22"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U22")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U24"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U24")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U23"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U23")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U17"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U17")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U19"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U19")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U15"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U15")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U25"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U25")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U35"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U35")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U37"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U37")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U28"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U28")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U34"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U34")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U27"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U27")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U38"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U38")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U36"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U36")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U33"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U33")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U31"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U31")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U32"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U32")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U30"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U30")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U29"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U29")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U49"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U49")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U46"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U46")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U43"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U43")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U44"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U44")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U48"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U48")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U47"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U47")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U42"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U42")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U50"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U50")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U39"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U39")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U40"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U40")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U41"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U41")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U45"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U45")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U92"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U92")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U59"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U59")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U62"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U62")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U60"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U60")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U95"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U95")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U75"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U75")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U81"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U81")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U61"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U61")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U56"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U56")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U70"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U70")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U74"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U74")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U55"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U55")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U90"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U90")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U63"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U63")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U76"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U76")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U67"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U67")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U69"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U69")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U87"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U87")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U86"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U86")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U97"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U97")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U72"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U72")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U84"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U84")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U85"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U85")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U89"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U89")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U53"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U53")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U58"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U58")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U68"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U68")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U52"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U52")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U66"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U66")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U94"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U94")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U77"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U77")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U51"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U51")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U54"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U54")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U78"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U78")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U83"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U83")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U57"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U57")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U96"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U96")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U73"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U73")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U80"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U80")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U91"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U91")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U64"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U64")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U71"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U71")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U79"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U79")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U65"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U65")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U82"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U82")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U88"
+            ("device_name"	"AND3")
+            ("pspice_path"	"X_U88")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U98"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U98")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U93"
+            ("device_name"	"RSFF")
+            ("pspice_path"	"X_U93")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U100"
+            ("device_name"	"OR4")
+            ("pspice_path"	"X_U100")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U101"
+            ("device_name"	"OR4")
+            ("pspice_path"	"X_U101")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U102"
+            ("device_name"	"OR4")
+            ("pspice_path"	"X_U102")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U103"
+            ("device_name"	"OR4")
+            ("pspice_path"	"X_U103")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U108"
+            ("device_name"	"OR2")
+            ("pspice_path"	"X_U108")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U109"
+            ("device_name"	"OR2")
+            ("pspice_path"	"X_U109")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U110"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U110")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U111"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U111")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U112"
+            ("device_name"	"AND2")
+            ("pspice_path"	"X_U112")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U113"
+            ("device_name"	"AND2")
+            ("pspice_path"	"X_U113")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U115"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U115")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U114"
+            ("device_name"	"OR2")
+            ("pspice_path"	"X_U114")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U117"
+            ("device_name"	"AND2")
+            ("pspice_path"	"X_U117")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U121"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U121")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U116"
+            ("device_name"	"XOR")
+            ("pspice_path"	"X_U116")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U123"
+            ("device_name"	"XOR")
+            ("pspice_path"	"X_U123")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U122"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U122")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U125"
+            ("device_name"	"XOR")
+            ("pspice_path"	"X_U125")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U124"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U124")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U129"
+            ("device_name"	"XOR")
+            ("pspice_path"	"X_U129")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U127"
+            ("device_name"	"XOR")
+            ("pspice_path"	"X_U127")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U128"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U128")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U130"
+            ("device_name"	"AND2")
+            ("pspice_path"	"X_U130")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U126"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U126")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U140"
+            ("device_name"	"AND2")
+            ("pspice_path"	"X_U140")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U142"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U142")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U141"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U141")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U139"
+            ("device_name"	"AND2")
+            ("pspice_path"	"X_U139")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U143A"
+            ("device_name"	"CD4027A")
+            ("pspice_path"	"X_U143A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"5Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-500.1nW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("U137"
+            ("device_name"	"AND2")
+            ("pspice_path"	"X_U137")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U138"
+            ("device_name"	"AND2")
+            ("pspice_path"	"X_U138")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U143B"
+            ("device_name"	"CD4027A")
+            ("pspice_path"	"X_U143B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("DSTM3"
+            ("device_name"	"DigClock")
+            ("pspice_path"	"U_DSTM3")
+            ("level"	"0")
+            ("model_params"
+                ("STARTVAL"
+                    ("value"	"1")
+                    ("pspice_param"	"STARTVAL")
+                )
+                ("ONTIME"
+                    ("value"	"8.3ms")
+                    ("pspice_param"	"ONTIME")
+                )
+                ("OFFTIME"
+                    ("value"	"8.3ms")
+                    ("pspice_param"	"OFFTIME")
+                )
+                ("OPPVAL"
+                    ("value"	"0")
+                    ("pspice_param"	"OPPVAL")
+                )
+                ("DELAY"
+                    ("value"	"")
+                    ("pspice_param"	"DELAY")
+                )
+                ("IO_MODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IO_MODEL")
+                )
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+            )
+        )
+        ("U144"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U144")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U145"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U145")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U148"
+            ("device_name"	"INV")
+            ("pspice_path"	"X_U148")
+            ("level"	"0")
+            ("model_params"
+                ("IMPL"
+                    ("value"	"PLSYN")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("R1"
+            ("device_name"	"r")
+            ("pspice_path"	"R_R1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("BiasValue Power"
+                    ("value"	"224.0nW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+            )
+        )
+        ("R2"
+            ("device_name"	"r")
+            ("pspice_path"	"R_R2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("BiasValue Power"
+                    ("value"	"3.590uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+            )
+        )
+        ("V2"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V2")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0.5Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-7.483uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("V3"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V3")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0.5Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-7.483uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("R4"
+            ("device_name"	"r")
+            ("pspice_path"	"R_R4")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("BiasValue Power"
+                    ("value"	"3.590uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+            )
+        )
+        ("R3"
+            ("device_name"	"r")
+            ("pspice_path"	"R_R3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("BiasValue Power"
+                    ("value"	"224.0nW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+            )
+        )
+        ("R5"
+            ("device_name"	"r")
+            ("pspice_path"	"R_R5")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("BiasValue Power"
+                    ("value"	"224.0nW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+            )
+        )
+        ("V4"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V4")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0.5Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-7.483uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("R6"
+            ("device_name"	"r")
+            ("pspice_path"	"R_R6")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("BiasValue Power"
+                    ("value"	"3.590uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+            )
+        )
+        ("R8"
+            ("device_name"	"r")
+            ("pspice_path"	"R_R8")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("BiasValue Power"
+                    ("value"	"3.590uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+            )
+        )
+        ("V5"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V5")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0.5Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-7.483uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+            )
+        )
+        ("R7"
+            ("device_name"	"r")
+            ("pspice_path"	"R_R7")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+                ("BiasValue Power"
+                    ("value"	"224.0nW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+            )
+        )
+    )
+)

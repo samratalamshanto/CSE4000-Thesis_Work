@@ -1,0 +1,50 @@
+--------------------------Starting of the Sender part-----------------------------------
+
+Number of columns in the message : 6
+Number of rows in the message : 8
+Number of block in the message : 2
+
+
+Message : 
+1 1 0 1 0 0 
+1 0 0 1 0 0 
+1 0 1 1 1 0 
+1 0 1 1 1 0 
+0 0 0 1 0 1 
+0 0 0 1 0 1 
+0 0 0 1 0 1 
+0 0 0 1 0 1 
+
+
+Rule r1 : 0XX XXX 
+Rule r2 : 000 01X 
+Rule r3 : 01X 1XX 
+
+------------------------------Ending of the sender part------------------------------------
+
+
+------------------------------starting of the receiever part------------------------------------
+
+Message with error : 
+1 1 0 1 0 0 
+1 0 0 1 0 0 
+1 0 1 1 1 0 
+1 0 1 1 1 0 
+0 0 0 1 0 1 
+0 1 0 1 0 1 
+0 1 0 1 0 1 
+1 1 0 0 0 1 
+
+
+After detecting and correction, the Correct message is given below 
+
+1 1 0 1 0 0 
+1 0 0 1 0 0 
+1 0 1 1 1 0 
+1 0 1 1 1 0 
+0 0 0 1 0 1 
+0 0 0 1 0 1 
+0 0 0 1 0 1 
+0 0 0 1 0 1 
+
+

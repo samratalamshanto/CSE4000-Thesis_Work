@@ -1,0 +1,757 @@
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Circuit.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_16.6/tools/capture/library/pspice/memristor.lib" 
+* From [PSPICE NETLIST] section of C:\Users\zobay\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 200ms 0 
+.OPTIONS ADVCONV
+.OPTIONS DIGINITSTATE= 0
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TCAM 
+X_U1         N00403 N01245 N00416 N00544 M_UN0001 $G_DPWR $G_DGND RSFF
+X_U4         N00820 N00548 S0 N00403 $G_DPWR $G_DGND AND3
+X_U5         N00820 N00617 S0 N00416 $G_DPWR $G_DGND AND3
+X_U6         RW N00544 S0 N00800 $G_DPWR $G_DGND AND3
+X_U7         N00548 N00617  $G_DPWR $G_DGND INV
+X_U8         RW N00820  $G_DPWR $G_DGND INV
+X_U10         N01847 N00548 S1 N01709 $G_DPWR $G_DGND AND3
+X_U9         N01709 N01245 N01721 N01757 M_UN0002 $G_DPWR $G_DGND RSFF
+X_U12         RW N01757 S1 N01841 $G_DPWR $G_DGND AND3
+X_U11         N01847 N01787 S1 N01721 $G_DPWR $G_DGND AND3
+X_U13         N00548 N01787  $G_DPWR $G_DGND INV
+X_U14         RW N01847  $G_DPWR $G_DGND INV
+X_U16         N03869 N03813 S0 N03731 $G_DPWR $G_DGND AND3
+X_U20         RW N03869  $G_DPWR $G_DGND INV
+X_U26         RW N04149  $G_DPWR $G_DGND INV
+X_U18         RW N03779 S0 N03863 $G_DPWR $G_DGND AND3
+X_U21         N03987 N01245 N04023 N04035 M_UN0003 $G_DPWR $G_DGND RSFF
+X_U22         N04149 N03813 S1 N03987 $G_DPWR $G_DGND AND3
+X_U24         RW N04035 S1 N47644 $G_DPWR $G_DGND AND3
+X_U23         N04149 N04069 S1 N04023 $G_DPWR $G_DGND AND3
+X_U17         N03869 N03809 S0 N03743 $G_DPWR $G_DGND AND3
+X_U19         N03813 N03809  $G_DPWR $G_DGND INV
+X_U15         N03731 N01245 N03743 N03779 M_UN0004 $G_DPWR $G_DGND RSFF
+X_U25         N03813 N04069  $G_DPWR $G_DGND INV
+X_U35         N05470 N05390 S1 N05344 $G_DPWR $G_DGND AND3
+X_U37         N05104 N05390  $G_DPWR $G_DGND INV
+X_U28         N05190 N05104 S0 N05052 $G_DPWR $G_DGND AND3
+X_U34         N05470 N05104 S1 N05308 $G_DPWR $G_DGND AND3
+X_U27         N05052 N01245 N05064 N05100 M_UN0005 $G_DPWR $G_DGND RSFF
+X_U38         RW N05470  $G_DPWR $G_DGND INV
+X_U36         RW N05356 S1 N05464 $G_DPWR $G_DGND AND3
+X_U33         N05308 N01245 N05344 N05356 M_UN0006 $G_DPWR $G_DGND RSFF
+X_U31         N05104 N05130  $G_DPWR $G_DGND INV
+X_U32         RW N05190  $G_DPWR $G_DGND INV
+X_U30         RW N05100 S0 N05184 $G_DPWR $G_DGND AND3
+X_U29         N05190 N05130 S0 N05064 $G_DPWR $G_DGND AND3
+X_U49         N06481 N06767  $G_DPWR $G_DGND INV
+X_U46         N06847 N06481 S1 N06685 $G_DPWR $G_DGND AND3
+X_U43         N06481 N06507  $G_DPWR $G_DGND INV
+X_U44         RW N06567  $G_DPWR $G_DGND INV
+X_U48         RW N06733 S1 N06841 $G_DPWR $G_DGND AND3
+X_U47         N06847 N06767 S1 N06721 $G_DPWR $G_DGND AND3
+X_U42         RW N06477 S0 N06561 $G_DPWR $G_DGND AND3
+X_U50         RW N06847  $G_DPWR $G_DGND INV
+X_U39         N06429 N01245 N06441 N06477 M_UN0007 $G_DPWR $G_DGND RSFF
+X_U40         N06567 N06481 S0 N06429 $G_DPWR $G_DGND AND3
+X_U41         N06567 N06507 S0 N06441 $G_DPWR $G_DGND AND3
+X_U45         N06685 N01245 N06721 N06733 M_UN0008 $G_DPWR $G_DGND RSFF
+X_U92         RW N14857  $G_DPWR $G_DGND INV
+X_U59         N13457 N13377 S3 N13331 $G_DPWR $G_DGND AND3
+X_U62         RW N13457  $G_DPWR $G_DGND INV
+X_U60         RW N13343 S3 N13451 $G_DPWR $G_DGND AND3
+X_U95         N15137 N15033 S3 N15011 $G_DPWR $G_DGND AND3
+X_U75         N14135 N01245 N14171 N14183 M_UN0009 $G_DPWR $G_DGND RSFF
+X_U81         N14391 N01245 N14451 N14463 M_UN0010 $G_DPWR $G_DGND RSFF
+X_U61         N00548 N13377  $G_DPWR $G_DGND INV
+X_U56         RW N13177  $G_DPWR $G_DGND INV
+X_U70         N14017 N03813 S3 N13855 $G_DPWR $G_DGND AND3
+X_U74         RW N14017  $G_DPWR $G_DGND INV
+X_U55         N00548 N13117  $G_DPWR $G_DGND INV
+X_U90         RW N14743 S2 N14851 $G_DPWR $G_DGND AND3
+X_U63         N13599 N01245 N13611 N13647 M_UN0011 $G_DPWR $G_DGND RSFF
+X_U76         N14297 N05104 S2 N14135 $G_DPWR $G_DGND AND3
+X_U67         N03813 N13677  $G_DPWR $G_DGND INV
+X_U69         N13855 N01245 N13891 N13903 M_UN0012 $G_DPWR $G_DGND RSFF
+X_U87         N14695 N01245 N14731 N14743 M_UN0013 $G_DPWR $G_DGND RSFF
+X_U86         RW N14577  $G_DPWR $G_DGND INV
+X_U97         N06481 N15033  $G_DPWR $G_DGND INV
+X_U72         RW N13903 S3 N14011 $G_DPWR $G_DGND AND3
+X_U84         RW N14463 S3 N14571 $G_DPWR $G_DGND AND3
+X_U85         N05104 N14473  $G_DPWR $G_DGND INV
+X_U89         N14857 N14777 S2 N14731 $G_DPWR $G_DGND AND3
+X_U53         N13177 N13117 S2 N13051 $G_DPWR $G_DGND AND3
+X_U58         N13457 N00548 S3 N13295 $G_DPWR $G_DGND AND3
+X_U68         RW N13737  $G_DPWR $G_DGND INV
+X_U52         N13177 N00548 S2 N13039 $G_DPWR $G_DGND AND3
+X_U66         RW N13647 S2 N13731 $G_DPWR $G_DGND AND3
+X_U94         N15137 N06481 S3 N14951 $G_DPWR $G_DGND AND3
+X_U77         N14297 N14217 S2 N14171 $G_DPWR $G_DGND AND3
+X_U51         N13039 N01245 N13051 N13087 M_UN0014 $G_DPWR $G_DGND RSFF
+X_U54         RW N13087 S2 N13171 $G_DPWR $G_DGND AND3
+X_U78         RW N14183 S2 N14291 $G_DPWR $G_DGND AND3
+X_U83         N14577 N14473 S3 N14451 $G_DPWR $G_DGND AND3
+X_U57         N13295 N01245 N13331 N13343 M_UN0015 $G_DPWR $G_DGND RSFF
+X_U96         RW N15023 S3 N47095 $G_DPWR $G_DGND AND3
+X_U73         N03813 N13937  $G_DPWR $G_DGND INV
+X_U80         RW N14297  $G_DPWR $G_DGND INV
+X_U91         N06481 N14777  $G_DPWR $G_DGND INV
+X_U64         N13737 N03813 S2 N13599 $G_DPWR $G_DGND AND3
+X_U71         N14017 N13937 S3 N13891 $G_DPWR $G_DGND AND3
+X_U79         N05104 N14217  $G_DPWR $G_DGND INV
+X_U65         N13737 N13677 S2 N13611 $G_DPWR $G_DGND AND3
+X_U82         N14577 N05104 S3 N14391 $G_DPWR $G_DGND AND3
+X_U88         N14857 N06481 S2 N14695 $G_DPWR $G_DGND AND3
+X_U98         RW N15137  $G_DPWR $G_DGND INV
+X_U93         N14951 N01245 N15011 N15023 M_UN0016 $G_DPWR $G_DGND RSFF
+X_U100         N06561 N06841 N14851 N47095 OUTPUT3 $G_DPWR $G_DGND OR4
+X_U101         N00800 N01841 N13171 N13451 OUTPUT2 $G_DPWR $G_DGND OR4
+X_U102         N03863 N47644 N13731 N14011 OUTPUT1 $G_DPWR $G_DGND OR4
+X_U103         N05184 N05464 N14291 N14571 OUTPUT0 $G_DPWR $G_DGND OR4
+X_U108         OUT_1 N62425 N62349 $G_DPWR $G_DGND OR2
+X_U109         OUT_0 N62558 N62361 $G_DPWR $G_DGND OR2
+X_U110         OUT_1 N62425  $G_DPWR $G_DGND INV
+X_U111         OUT_0 N62558  $G_DPWR $G_DGND INV
+X_U112         N62361 N62349 N06481  $G_DPWR $G_DGND AND2
+X_U113         N63965 N64118 N00548  $G_DPWR $G_DGND AND2
+X_U115         OUT_0 N63977  $G_DPWR $G_DGND INV
+X_U114         OUT_0 N63977 N63965 $G_DPWR $G_DGND OR2
+X_U117         N64433 N64515 N03813  $G_DPWR $G_DGND AND2
+X_U121         N673170 N64118  $G_DPWR $G_DGND INV
+X_U116         CLK OUT_1 N673170 $G_DPWR $G_DGND XOR
+X_U123         N100331 OUT_1 N674620 $G_DPWR $G_DGND XOR
+X_U122         N674620 N64515  $G_DPWR $G_DGND INV
+X_U125         N100331 OUT_0 N675660 $G_DPWR $G_DGND XOR
+X_U124         N675660 N64433  $G_DPWR $G_DGND INV
+X_U129         CLK OUT_0 N687540 $G_DPWR $G_DGND XOR
+X_U127         N100331 OUT_1 N687060 $G_DPWR $G_DGND XOR
+X_U128         N687540 N68788  $G_DPWR $G_DGND INV
+X_U130         N68788 N68714 N05104  $G_DPWR $G_DGND AND2
+X_U126         N687060 N68714  $G_DPWR $G_DGND INV
+X_U140         OUT_1 OUT_0 S3  $G_DPWR $G_DGND AND2
+X_U142         OUT_0 N77344  $G_DPWR $G_DGND INV
+X_U141         OUT_1 N77340  $G_DPWR $G_DGND INV
+X_U139         OUT_1 N77344 S2  $G_DPWR $G_DGND AND2
+X_U143A         0 0 CLK N77628 N77628 OUT_0 M_UN0017 $G_CD4000_VDD
++  $G_CD4000_VSS CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+V_V1         N77628 0 5Vdc
+X_U137         N77340 N77344 S0  $G_DPWR $G_DGND AND2
+X_U138         N77340 OUT_0 S1  $G_DPWR $G_DGND AND2
+X_U143B         0 0 CLK OUT_0 OUT_0 OUT_1 M_UN0018 $G_CD4000_VDD $G_CD4000_VSS
++  CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM3         STIM(1,1) $G_DPWR $G_DGND CLK IO_STM IO_LEVEL=0 
++ 0 1
++ +8.3ms 0
++REPEAT FOREVER
++ +8.3ms 1
++  +8.3ms 0
++ ENDREPEAT
+X_U144         CLK RW  $G_DPWR $G_DGND INV
+X_U145         CLK N01245  $G_DPWR $G_DGND INV
+X_U148         CLK N100331  $G_DPWR $G_DGND INV
+X_M1         OUTPUT3 MEM3 N116300 MEMRISTOR
+R_R1         N1172721 N116300  1k  
+R_R2         0 MEM3  1k  
+V_V2         N1172721 0 0.5Vdc
+V_V3         N1271011 0 0.5Vdc
+R_R4         0 MEM2  1k  
+X_M2         OUTPUT2 MEM2 N127215 MEMRISTOR
+R_R3         N1271011 N127215  1k  
+R_R5         N1275191 N127633  1k  
+V_V4         N1275191 0 0.5Vdc
+X_M3         OUTPUT1 MEM1 N127633 MEMRISTOR
+R_R6         0 MEM1  1k  
+R_R8         0 MEM0  1k  
+V_V5         N1277921 0 0.5Vdc
+X_M4         OUTPUT0 MEM0 N127906 MEMRISTOR
+R_R7         N1277921 N127906  1k  
+
+**** RESUMING Circuit.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_U143B.U1:IN2 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000A
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U143B.U1:IN1 from analog node 0 to new digital node 0$AtoD2
+X$0_AtoD2
++ 0
++ 0$AtoD2
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000A
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U143A.U1:IN2 from analog node 0 to new digital node 0$AtoD3
+X$0_AtoD3
++ 0
++ 0$AtoD3
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000A
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U143A.U1:IN1 from analog node 0 to new digital node 0$AtoD4
+X$0_AtoD4
++ 0
++ 0$AtoD4
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000A
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N77628
+*
+* Moving X_U143A.U4:K1 from analog node N77628 to new digital node N77628$AtoD
+X$N77628_AtoD1
++ N77628
++ N77628$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000A
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U143A.U4:J1 from analog node N77628 to new digital node N77628$AtoD2
+X$N77628_AtoD2
++ N77628
++ N77628$AtoD2
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000A
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node OUTPUT3
+*
+* Moving X_U100.U1:OUT1 from analog node OUTPUT3 to new digital node OUTPUT3$DtoA
+X$OUTPUT3_DtoA1
++ OUTPUT3$DtoA
++ OUTPUT3
++ $G_DPWR
++ $G_DGND
++ DtoAdefault
++       PARAMS: DRVH=  50     DRVL=  50     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node OUTPUT2
+*
+* Moving X_U101.U1:OUT1 from analog node OUTPUT2 to new digital node OUTPUT2$DtoA
+X$OUTPUT2_DtoA1
++ OUTPUT2$DtoA
++ OUTPUT2
++ $G_DPWR
++ $G_DGND
++ DtoAdefault
++       PARAMS: DRVH=  50     DRVL=  50     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node OUTPUT1
+*
+* Moving X_U102.U1:OUT1 from analog node OUTPUT1 to new digital node OUTPUT1$DtoA
+X$OUTPUT1_DtoA1
++ OUTPUT1$DtoA
++ OUTPUT1
++ $G_DPWR
++ $G_DGND
++ DtoAdefault
++       PARAMS: DRVH=  50     DRVL=  50     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node OUTPUT0
+*
+* Moving X_U103.U1:OUT1 from analog node OUTPUT0 to new digital node OUTPUT0$DtoA
+X$OUTPUT0_DtoA1
++ OUTPUT0$DtoA
++ OUTPUT0
++ $G_DPWR
++ $G_DGND
++ DtoAdefault
++       PARAMS: DRVH=  50     DRVL=  50     CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+X$CD4000_PWR 0 CD4000_PWR
+
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D74CLMP         
+          IS    1.000000E-15 
+          RS    2            
+         CJO    2.000000E-12 
+
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DIN74           
+      S0NAME 0               
+       S0TSW    3.500000E-09 
+       S0RLO    7.13         
+       S0RHI  389            
+      S1NAME 1               
+       S1TSW    5.500000E-09 
+       S1RLO  467            
+       S1RHI  200            
+      S2NAME X               
+       S2TSW    3.500000E-09 
+       S2RLO   42.9          
+       S2RHI  116            
+      S3NAME R               
+       S3TSW    3.500000E-09 
+       S3RLO   42.9          
+       S3RHI  116            
+      S4NAME F               
+       S4TSW    3.500000E-09 
+       S4RLO   42.9          
+       S4RHI  116            
+      S5NAME Z               
+       S5TSW    3.500000E-09 
+       S5RLO  200.000000E+03 
+       S5RHI  200.000000E+03 
+
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO4000A         
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI     .5          
+       S0VLO    -.5          
+      S1NAME 0               
+       S1VHI    -.5          
+       S1VLO   -3            
+      S2NAME R               
+       S2VHI     .05         
+       S2VLO    -.5          
+      S3NAME R               
+       S3VHI     .5          
+       S3VLO    -.05         
+      S4NAME X               
+       S4VHI     .5          
+       S4VLO    -.5          
+      S5NAME 1               
+       S5VHI    3            
+       S5VLO     .5          
+      S6NAME F               
+       S6VHI     .5          
+       S6VLO    -.05         
+      S7NAME F               
+       S7VHI     .05         
+       S7VLO    -.5          
+
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_PLD_GATE      D0_GATE         D_CD4027A_1     
+      TPLHMN    0               0               0            
+      TPLHTY    0               0               0            
+      TPLHMX    0               0               0            
+      TPHLMN    0               0              40.000000E-09 
+      TPHLTY    0               0             100.000000E-09 
+      TPHLMX    0               0             160.000000E-09 
+
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_CD4027A_2     D_CD4027A_3     
+  TPCLKQLHMN   30.000000E-09   64.000000E-09 
+  TPCLKQLHTY   75.000000E-09  160.000000E-09 
+  TPCLKQLHMX  120.000000E-09  360.000000E-09 
+  TPCLKQHLMN   30.000000E-09   64.000000E-09 
+  TPCLKQHLTY   75.000000E-09  160.000000E-09 
+  TPCLKQHLMX  120.000000E-09  360.000000E-09 
+   TPPCQLHMN    0              70.000000E-09 
+   TPPCQLHTY    0             175.000000E-09 
+   TPPCQLHMX    0             225.000000E-09 
+   TPPCQHLMN    0              70.000000E-09 
+   TPPCQHLTY    0             175.000000E-09 
+   TPPCQHLMX    0             225.000000E-09 
+    TWCLKLMN    0               0            
+    TWCLKLTY  165.000000E-09  125.000000E-09 
+    TWCLKLMX  330.000000E-09  290.000000E-09 
+    TWCLKHMN    0               0            
+    TWCLKHTY  165.000000E-09  125.000000E-09 
+    TWCLKHMX  330.000000E-09  290.000000E-09 
+     TWPCLMN    0               0            
+     TWPCLTY   30.000000E-09  125.000000E-09 
+     TWPCLMX   60.000000E-09  200.000000E-09 
+   TSUDCLKMN    0               0            
+   TSUDCLKTY   70.000000E-09    0            
+   TSUDCLKMX  150.000000E-09    0            
+ TSUPCCLKHMN    0               0            
+ TSUPCCLKHTY    0               0            
+ TSUPCCLKHMX    0               0            
+    THDCLKMN    0               0            
+    THDCLKTY    0               0            
+    THDCLKMX    0               0            
+  TSUCECLKMN    0               0            
+  TSUCECLKTY    0               0            
+  TSUCECLKMX    0               0            
+   THCECLKMN    0               0            
+   THCECLKTY    0               0            
+   THCECLKMX    0               0            
+
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     Digital Gated FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_PLD_GFF       
+    TPDQLHMN    0            
+    TPDQLHTY    0            
+    TPDQLHMX    0            
+    TPDQHLMN    0            
+    TPDQHLTY    0            
+    TPDQHLMX    0            
+    TPGQLHMN    0            
+    TPGQLHTY    0            
+    TPGQLHMX    0            
+    TPGQHLMN    0            
+    TPGQHLTY    0            
+    TPGQHLMX    0            
+   TPPCQLHMN    0            
+   TPPCQLHTY    0            
+   TPPCQLHMX    0            
+   TPPCQHLMN    0            
+   TPPCQHLTY    0            
+   TPPCQHLMX    0            
+      TWGHMN    0            
+      TWGHTY    0            
+      TWGHMX    0            
+     TWPCLMN    0            
+     TWPCLTY    0            
+     TWPCLMX    0            
+     TSUDGMN    0            
+     TSUDGTY    0            
+     TSUDGMX    0            
+   TSUPCGHMN    0            
+   TSUPCGHTY    0            
+   TSUPCGHMX    0            
+      THDGMN    0            
+      THDGTY    0            
+      THDGMX    0            
+
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_PLD          IO_4000A        IO_DFT          
+        DRVL    0                               1.649000E+03                 
+        DRVH    0                               1.649000E+03                 
+       AtoD1                                 AtoD_4000A      AtoD_STD        
+       AtoD2                                 AtoD_4000A_NX   AtoD_STD_NX     
+       AtoD3                                 AtoD_4000A      AtoD_STD        
+       AtoD4                                 AtoD_4000A_NX   AtoD_STD_NX     
+       DtoA1 DtoA_STM                        DtoA_4000A      DtoA_STD        
+       DtoA2 DtoA_STM                        DtoA_4000A      DtoA_STD        
+       DtoA3 DtoA_STM                        DtoA_4000A      DtoA_STD        
+       DtoA4 DtoA_STM                        DtoA_4000A      DtoA_STD        
+    DIGPOWER                                 CD4000_PWR                      
+      TSWHL1                                    7.070000E-09                 
+      TSWHL2                                    6.940000E-09                 
+      TSWHL3                                    9.330000E-09                 
+      TSWHL4                                    9.180000E-09                 
+      TSWLH1                                    8.580000E-09                 
+      TSWLH2                                    8.370000E-09                 
+      TSWLH3                                   10.730000E-09                 
+      TSWLH4                                   10.590000E-09                 
+       TPWRT  100.000000E+03  100.000000E+03  100.000000E+03  100.000000E+03 
+
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( MEM0)     .0599  ( MEM1)     .0599  ( MEM2)     .0599  ( MEM3)     .0599      
+
+(N77628)    5.0000 (X_M1.4)     .0605 (X_M1.8)     .0599 (X_M1.9)     .0605     
+
+(X_M2.4)     .0605 (X_M2.8)     .0599 (X_M2.9)     .0605 (X_M3.4)     .0605     
+
+(X_M3.8)     .0599 (X_M3.9)     .0605 (X_M4.4)     .0605 (X_M4.8)     .0599     
+
+(X_M4.9)     .0605 ($G_DGND)    0.0000                   ($G_DPWR)    5.0000    
+
+(N116300)     .4850                   (N127215)     .4850                       
+
+(N127633)     .4850                   (N127906)     .4850                       
+
+(OUTPUT0)     .0896                   (OUTPUT1)     .0896                       
+
+(OUTPUT2)     .0896                   (OUTPUT3)     .0896                       
+
+(X_M1.10)     .4850                   (X_M2.10)     .4850                       
+
+(X_M3.10)     .4850                   (X_M4.10)     .4850                       
+
+(N1172721)     .5000                  (N1271011)     .5000                      
+
+(N1275191)     .5000                  (N1277921)     .5000                      
+
+($G_CD4000_VDD)    5.0000             ($G_CD4000_VSS)    0.0000                 
+
+(X$0_AtoD1.NORM)   -1.2500            (X$0_AtoD2.NORM)   -1.2500                
+
+(X$0_AtoD3.NORM)   -1.2500            (X$0_AtoD4.NORM)   -1.2500                
+
+(X$N77628_AtoD1.NORM)    1.2500       (X$N77628_AtoD2.NORM)    1.2500           
+
+(X$0_AtoD1.XNORM.THRESHOLD)    1.5000 (X$0_AtoD2.XNORM.THRESHOLD)    1.5000     
+
+(X$0_AtoD3.XNORM.THRESHOLD)    1.5000 (X$0_AtoD4.XNORM.THRESHOLD)    1.5000     
+
+(X$N77628_AtoD1.XNORM.THRESHOLD)    1.5000                                      
+
+(X$N77628_AtoD2.XNORM.THRESHOLD)    1.5000               
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(  N62361) : 1     (  N00548) : 0     (  N14391) : 0     (M_UN0006) : 1         
+
+(  N13855) : 0     (  N14135) : 0     (  N13377) : 1     (X_U143B.PREB) : 1     
+
+(M_UN0003) : 1     (  N14463) : 0     (  N77344) : 1     (OUTPUT2$DtoA) : 0     
+
+(      RW) : 0     (  N62558) : 1     (X_U143A.Y) : 0    (  N14217) : 1         
+
+(  N13903) : 0     (  N13451) : 0     (      S2) : 0     (  N00800) : 0         
+
+(  N68714) : 1     (  N01757) : 0     (  N13737) : 1     (  N68788) : 0         
+
+(  N13295) : 0     (  N05064) : 1     (  N14857) : 1     (  N15137) : 1         
+
+(  N05356) : 0     (  N13039) : 0     ( N675660) : 0     (M_UN0016) : 1         
+
+(  N03987) : 0     (  N03813) : 1     (  N13343) : 0     (M_UN0013) : 1         
+
+(X_U143B.CLKM) : 0                    (  N13177) : 1     (  N47095) : 0         
+
+(OUTPUT1$DtoA) : 0                    (  N14731) : 0     (M_UN0010) : 1         
+
+(  N14297) : 1     (  N06721) : 0     (  N00416) : 1     (  N03809) : 0         
+
+(X_U143B.CLRB) : 1                    (  N05104) : 0     (   $D_HI) : 1         
+
+(  N14017) : 1     ( 0$AtoD3) : 0     (  N13677) : 0     (  N13891) : 0         
+
+(  N14171) : 0     (  N01709) : 0     (M_UN0007) : 1     (  N06477) : 0         
+
+(  N77340) : 1     (X_U143A.CLKM) : 0                    (  N13611) : 0         
+
+(  N05470) : 1     (  N05308) : 0     (  N64118) : 0     (M_UN0004) : 1         
+
+(  N15011) : 0     (  N00617) : 1     (X_U143A.CLRB) : 1                        
+
+(  N05184) : 0     (M_UN0001) : 1     (  N00403) : 0     (  N06847) : 1         
+
+(  N06481) : 1     (      S3) : 0     (  N63977) : 1     (  N14777) : 0         
+
+(  N13051) : 0     (X_U143B.CLKS) : 0                    (  N15033) : 0         
+
+(      S0) : 1     (M_UN0017) : 1     (  N13731) : 0     (  N03743) : 0         
+
+(  N04023) : 0     (  N01721) : 0     (   OUT_0) : 0     (  N14851) : 0         
+
+(OUTPUT0$DtoA) : 0                    (N77628$AtoD) : 1  (  N06841) : 0         
+
+(M_UN0014) : 1     (X_U143A.YB) : 1   (  N14695) : 0     (  N03869) : 1         
+
+(  N06685) : 0     (M_UN0008) : 1     (  N05130) : 1     (  0$AtoD) : 0         
+
+(  N62425) : 1     (M_UN0011) : 1     (  N06429) : 1     (  N01245) : 0         
+
+(  N13171) : 0     (X_U143A.CLKS) : 0                    (  N14743) : 0         
+
+(  N15023) : 0     (  N14291) : 0     ( N100331) : 0     (  N64515) : 1         
+
+(  N03863) : 0     (  N06507) : 0     (  N14577) : 1     (  N14011) : 0         
+
+(  N05052) : 0     (  N13599) : 0     (  N05344) : 0     (X_U143B.Y) : 0        
+
+(  N04149) : 1     (  N01847) : 1     (M_UN0018) : 1     (  N14183) : 0         
+
+(M_UN0005) : 1     (  N13647) : 0     (  N62349) : 1     (  N06767) : 0         
+
+(  N00544) : 0     (  N06733) : 0     (M_UN0002) : 1     (N77628$AtoD2) : 1     
+
+(  N13457) : 1     ( N673170) : 1     (  N01841) : 0     (X_U143B.YB) : 1       
+
+(  N05464) : 0     (     CLK) : 1     (      S1) : 0     (OUTPUT3$DtoA) : 0     
+
+(  N05390) : 1     (  N13087) : 0     (   OUT_1) : 0     (  N00820) : 1         
+
+(  N64433) : 1     (  N13331) : 0     ( N674620) : 0     (M_UN0015) : 1         
+
+(  N01787) : 1     (  N03731) : 1     (  N14451) : 0     (M_UN0009) : 1         
+
+(  N06441) : 0     (M_UN0012) : 1     ( 0$AtoD4) : 0     ( N687060) : 0         
+
+(X_U143A.PREB) : 1                    (  N06567) : 1     (  N14951) : 0         
+
+(  N14473) : 1     (  N13117) : 1     ( N687540) : 1     (  N63965) : 1         
+
+(  N13937) : 0     (  N47644) : 0     ( 0$AtoD2) : 0     (  N03779) : 0         
+
+(  N05100) : 0     (  N05190) : 1     (  N04069) : 0     (  N14571) : 0         
+
+(  N04035) : 0     (  N06561) : 0     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E-07
+    V_V2        -1.497E-05
+    V_V3        -1.497E-05
+    V_V4        -1.497E-05
+    V_V5        -1.497E-05
+    X_M1.Vsense   5.992E-05
+    X_M2.Vsense   5.992E-05
+    X_M3.Vsense   5.992E-05
+    X_M4.Vsense   5.992E-05
+    X$DIGIFPWR.VDPWR  -5.050E-02
+    X$DIGIFPWR.VDGND  -2.447E-04
+    X$CD4000_PWR.VVDD  -5.200E-06
+    X$CD4000_PWR.VVSS  -5.100E-06
+
+    TOTAL POWER DISSIPATION   2.53E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/28/22 11:01:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Circuit"  [ C:\Users\zobay\OneDrive\Desktop\Thesis defense\TCAM circuit\tcam -pspicefiles\schematic1\circuit
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .33
+
